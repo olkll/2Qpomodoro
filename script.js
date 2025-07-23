@@ -22,7 +22,7 @@ function startTimer() {
 
       isBreak = !isBreak;
       remainingTime = isBreak ? 5 * 60 : 25 * 60; // 5分休憩 or 25分作業
-      document.getElementById('status').textContent = isBreak ? "休憩タイム ☕" : "集中タイム 🔥";
+      document.getElementById('status').textContent = isBreak ? "休憩タイム ☕" : "!orario di lavoro!";
 
       // 自動で次のタイマー開始
       startTimer();
@@ -35,7 +35,7 @@ function resetTimer() {
   timerInterval = null;
   isBreak = false;
   remainingTime = duration;
-  document.getElementById('status').textContent = "集中タイム 🔥";
+  document.getElementById('status').textContent = "!orario di lavoro!";
   updateDisplay();
 }
 
