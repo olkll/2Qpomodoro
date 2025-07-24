@@ -10,7 +10,7 @@ function updateDisplay() {
 }
 
 function startTimer() {
-  if (timerInterval) return; // 既に動いているなら無視
+  if (timerInterval) return; // 既に動いてたら無視
 
   timerInterval = setInterval(() => {
     remainingTime--;
